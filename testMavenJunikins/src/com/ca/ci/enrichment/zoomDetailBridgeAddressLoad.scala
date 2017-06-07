@@ -63,7 +63,7 @@ object zoomDetailBridgeAddressLoad {
     resultTemp.createOrReplaceTempView("result_temp")
     //resultTemp.createOrReplaceTempView("result_temp")
 
-    //print("final"+resultTemp.show(4))
+    print("final"+resultTemp.show(4))
     resultTemp.write.mode(SaveMode.Append).jdbc(jdbcURL, "mdm.company_bridge_address_temp", connectionProperties)
 
   }
